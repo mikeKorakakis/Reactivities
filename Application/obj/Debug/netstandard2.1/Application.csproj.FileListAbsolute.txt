@@ -1,0 +1,14 @@
+/home/mike/Desktop/Reactivities/Application/bin/Debug/netstandard2.1/Application.deps.json
+/home/mike/Desktop/Reactivities/Application/bin/Debug/netstandard2.1/Application.dll
+/home/mike/Desktop/Reactivities/Application/bin/Debug/netstandard2.1/Application.pdb
+/home/mike/Desktop/Reactivities/Application/bin/Debug/netstandard2.1/Domain.dll
+/home/mike/Desktop/Reactivities/Application/bin/Debug/netstandard2.1/Persistence.dll
+/home/mike/Desktop/Reactivities/Application/bin/Debug/netstandard2.1/Domain.pdb
+/home/mike/Desktop/Reactivities/Application/bin/Debug/netstandard2.1/Persistence.pdb
+/home/mike/Desktop/Reactivities/Application/obj/Debug/netstandard2.1/Application.csprojAssemblyReference.cache
+/home/mike/Desktop/Reactivities/Application/obj/Debug/netstandard2.1/Application.csproj.CoreCompileInputs.cache
+/home/mike/Desktop/Reactivities/Application/obj/Debug/netstandard2.1/Application.AssemblyInfoInputs.cache
+/home/mike/Desktop/Reactivities/Application/obj/Debug/netstandard2.1/Application.AssemblyInfo.cs
+/home/mike/Desktop/Reactivities/Application/obj/Debug/netstandard2.1/Application.csproj.CopyComplete
+/home/mike/Desktop/Reactivities/Application/obj/Debug/netstandard2.1/Application.dll
+/home/mike/Desktop/Reactivities/Application/obj/Debug/netstandard2.1/Application.pdb
