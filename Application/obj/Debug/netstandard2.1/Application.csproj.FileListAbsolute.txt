@@ -12,3 +12,17 @@
 /home/mike/Desktop/Reactivities/Application/obj/Debug/netstandard2.1/Application.csproj.CopyComplete
 /home/mike/Desktop/Reactivities/Application/obj/Debug/netstandard2.1/Application.dll
 /home/mike/Desktop/Reactivities/Application/obj/Debug/netstandard2.1/Application.pdb
+C:\Users\mkorakakis\Desktop\Reactivities\Application\bin\Debug\netstandard2.1\Application.deps.json
+C:\Users\mkorakakis\Desktop\Reactivities\Application\bin\Debug\netstandard2.1\Application.dll
+C:\Users\mkorakakis\Desktop\Reactivities\Application\bin\Debug\netstandard2.1\Application.pdb
+C:\Users\mkorakakis\Desktop\Reactivities\Application\bin\Debug\netstandard2.1\Domain.dll
+C:\Users\mkorakakis\Desktop\Reactivities\Application\bin\Debug\netstandard2.1\Persistence.dll
+C:\Users\mkorakakis\Desktop\Reactivities\Application\bin\Debug\netstandard2.1\Domain.pdb
+C:\Users\mkorakakis\Desktop\Reactivities\Application\bin\Debug\netstandard2.1\Persistence.pdb
+C:\Users\mkorakakis\Desktop\Reactivities\Application\obj\Debug\netstandard2.1\Application.csprojAssemblyReference.cache
+C:\Users\mkorakakis\Desktop\Reactivities\Application\obj\Debug\netstandard2.1\Application.csproj.CoreCompileInputs.cache
+C:\Users\mkorakakis\Desktop\Reactivities\Application\obj\Debug\netstandard2.1\Application.AssemblyInfoInputs.cache
+C:\Users\mkorakakis\Desktop\Reactivities\Application\obj\Debug\netstandard2.1\Application.AssemblyInfo.cs
+C:\Users\mkorakakis\Desktop\Reactivities\Application\obj\Debug\netstandard2.1\Application.csproj.CopyComplete
+C:\Users\mkorakakis\Desktop\Reactivities\Application\obj\Debug\netstandard2.1\Application.dll
+C:\Users\mkorakakis\Desktop\Reactivities\Application\obj\Debug\netstandard2.1\Application.pdb

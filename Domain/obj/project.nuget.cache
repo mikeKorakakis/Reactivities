@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6tN5zMKZsXHMx462cM/gIoFqewobv/fDaXFiKYzvHK8Hg8uq3PuvtDakKajQkGysIUEjohdYO9gGl/GTtbFuvg==",
+  "dgSpecHash": "1d/oQuL9dOr+uc71wzA2i8bkYlsD9tcqaT9gJPW+2+HbleVV6/oFXx9xJC7oa8ROq5mkraFbOF3ngSGNUMqp8Q==",
   "success": true,
-  "projectFilePath": "/home/mike/Desktop/Reactivities/Domain/Domain.csproj",
+  "projectFilePath": "C:\\Users\\mkorakakis\\Desktop\\Reactivities\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
