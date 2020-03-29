@@ -1280,19 +1280,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mkorakakis\\.nuget\\packages\\": {}
+    "/home/mike/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mkorakakis\\Desktop\\Reactivities\\Persistence\\Persistence.csproj",
+      "projectUniqueName": "/home/mike/Desktop/Reactivities/Persistence/Persistence.csproj",
       "projectName": "Persistence",
-      "projectPath": "C:\\Users\\mkorakakis\\Desktop\\Reactivities\\Persistence\\Persistence.csproj",
-      "packagesPath": "C:\\Users\\mkorakakis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mkorakakis\\Desktop\\Reactivities\\Persistence\\obj\\",
+      "projectPath": "/home/mike/Desktop/Reactivities/Persistence/Persistence.csproj",
+      "packagesPath": "/home/mike/.nuget/packages/",
+      "outputPath": "/home/mike/Desktop/Reactivities/Persistence/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mkorakakis\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/mike/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
@@ -1303,8 +1303,8 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "C:\\Users\\mkorakakis\\Desktop\\Reactivities\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\mkorakakis\\Desktop\\Reactivities\\Domain\\Domain.csproj"
+            "/home/mike/Desktop/Reactivities/Domain/Domain.csproj": {
+              "projectPath": "/home/mike/Desktop/Reactivities/Domain/Domain.csproj"
             }
           }
         }
@@ -1342,7 +1342,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.201/RuntimeIdentifierGraph.json"
       }
     }
   }
