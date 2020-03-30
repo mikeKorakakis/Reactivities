@@ -1,16 +1,13 @@
 import React from "react";
 import { Menu, Container, Button } from "semantic-ui-react";
+import { NavLink } from "react-router-dom";
 
-interface IProps {
-  openCreateForm: () => void;
-}
-
-export const NavBar: React.FC<IProps> = ({ openCreateForm }) => {
+export const NavBar: React.FC = () => {
   return (
     <div>
       <Menu fixed="top" inverted>
         <Container>
-          <Menu.Item header>
+          <Menu.Item header as={NavLink} exact to="/">
             <img
               src="/assets/logo.png"
               alt="logo"
@@ -18,10 +15,11 @@ export const NavBar: React.FC<IProps> = ({ openCreateForm }) => {
             />
             Reactivities
           </Menu.Item>
-          <Menu.Item name="Activities" />
+          <Menu.Item name="Activities" as={NavLink} to="/activities" />
           <Menu.Item>
             <Button
-              onClick={openCreateForm}
+              as={NavLink}
+              to="/createActivity"
               positive
               content="Create Activity"
             />
