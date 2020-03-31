@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NznFEg9hup9oqG7mBVoXifX4uKlnvq7AqoG8DwNSfX0dNc94JwzABFSKvtniJrgD4BHot2DCnEei1rZ3yhtu3g==",
+  "dgSpecHash": "fRYYCFyAiBfReNARRAYXec42agqFP5ORIbJ0sLVKZSEHs1BXMbHIXq0s8RU0bYis2NAoz/k+coTJbIqerZTbpw==",
   "success": true,
   "projectFilePath": "/home/mike/Desktop/Reactivities/Application/Application.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,9 @@
     "/home/mike/.nuget/packages/fluentvalidation.dependencyinjectionextensions/8.6.2/fluentvalidation.dependencyinjectionextensions.8.6.2.nupkg.sha512",
     "/home/mike/.nuget/packages/mediatr/8.0.0/mediatr.8.0.0.nupkg.sha512",
     "/home/mike/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/8.0.0/mediatr.extensions.microsoft.dependencyinjection.8.0.0.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.aspnetcore.cryptography.internal/3.1.0/microsoft.aspnetcore.cryptography.internal.3.1.0.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/3.1.0/microsoft.aspnetcore.cryptography.keyderivation.3.1.0.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/3.1.0/microsoft.aspnetcore.identity.entityframeworkcore.3.1.0.nupkg.sha512",
     "/home/mike/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.0/microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "/home/mike/.nuget/packages/microsoft.bcl.hashcode/1.1.0/microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "/home/mike/.nuget/packages/microsoft.data.sqlite.core/3.1.0/microsoft.data.sqlite.core.3.1.0.nupkg.sha512",
@@ -27,6 +30,8 @@
     "/home/mike/.nuget/packages/microsoft.extensions.dependencyinjection/3.1.0/microsoft.extensions.dependencyinjection.3.1.0.nupkg.sha512",
     "/home/mike/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.1.0/microsoft.extensions.dependencyinjection.abstractions.3.1.0.nupkg.sha512",
     "/home/mike/.nuget/packages/microsoft.extensions.dependencymodel/3.1.0/microsoft.extensions.dependencymodel.3.1.0.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.identity.core/3.1.0/microsoft.extensions.identity.core.3.1.0.nupkg.sha512",
+    "/home/mike/.nuget/packages/microsoft.extensions.identity.stores/3.1.0/microsoft.extensions.identity.stores.3.1.0.nupkg.sha512",
     "/home/mike/.nuget/packages/microsoft.extensions.logging/3.1.0/microsoft.extensions.logging.3.1.0.nupkg.sha512",
     "/home/mike/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.0/microsoft.extensions.logging.abstractions.3.1.0.nupkg.sha512",
     "/home/mike/.nuget/packages/microsoft.extensions.options/3.1.0/microsoft.extensions.options.3.1.0.nupkg.sha512",
