@@ -129,3 +129,7 @@ C:/Users/mkorakakis/Desktop/Reactivities/API/obj/Debug/netcoreapp3.1/API.genrunt
 /home/mike/Desktop/Reactivities/API/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll
 /home/mike/Desktop/Reactivities/API/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.dll
 /home/mike/Desktop/Reactivities/API/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/mike/Desktop/Reactivities/API/bin/Debug/netcoreapp3.1/AutoMapper.dll
+/home/mike/Desktop/Reactivities/API/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/home/mike/Desktop/Reactivities/API/bin/Debug/netcoreapp3.1/Castle.Core.dll
+/home/mike/Desktop/Reactivities/API/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Proxies.dll
