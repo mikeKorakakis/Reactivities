@@ -20,6 +20,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Persistence;
 using AutoMapper;
+using Infrastructure.Photos;
+using Application;
 
 namespace API
 {
@@ -87,6 +89,8 @@ namespace API
       });
       services.AddScoped<IJwtGenerator, JwtGenerator>();
       services.AddScoped<IUserAccessor, UserAccessor>();
+      services.AddScoped<IPhotoAccessor, PhotoAccessor>();
+      services.Configure<CloudinarySettings>(Configuration.GetSection("Cloudinary"));
 
     }
 
