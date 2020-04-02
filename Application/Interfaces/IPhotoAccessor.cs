@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Http;
 
 namespace Application.Interfaces
 {
-  public interface IPhotoAccessor
-  {
-    PhotoUploadResult AddPhoto(IFormFile file);
+    public interface IPhotoAccessor
+    {
+        PhotoUploadResult AddPhoto(IFormFile file);
 
-    string DeletePhoto(string publicId);
+        string DeletePhoto(string publicId);
 
-  }
+    }
 }
