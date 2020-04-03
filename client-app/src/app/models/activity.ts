@@ -39,6 +39,7 @@ export interface IAttendee {
 	displayName: string;
 	image: string;
 	isHost: boolean;
+	following?: boolean;
 }
 
 export interface IComment {
@@ -48,4 +49,5 @@ export interface IComment {
 	username: string;
 	displayName: string;
 	image: string;
+
 }

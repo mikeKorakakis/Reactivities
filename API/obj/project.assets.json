@@ -7085,19 +7085,19 @@
     ]
   },
   "packageFolders": {
-    "/home/mike/.nuget/packages/": {}
+    "C:\\Users\\mkorakakis\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/mike/Desktop/Reactivities/API/API.csproj",
+      "projectUniqueName": "C:\\Users\\mkorakakis\\Desktop\\Reactivities\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "/home/mike/Desktop/Reactivities/API/API.csproj",
-      "packagesPath": "/home/mike/.nuget/packages/",
-      "outputPath": "/home/mike/Desktop/Reactivities/API/obj/",
+      "projectPath": "C:\\Users\\mkorakakis\\Desktop\\Reactivities\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\mkorakakis\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mkorakakis\\Desktop\\Reactivities\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/mike/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\mkorakakis\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -7108,11 +7108,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "/home/mike/Desktop/Reactivities/Application/Application.csproj": {
-              "projectPath": "/home/mike/Desktop/Reactivities/Application/Application.csproj"
+            "C:\\Users\\mkorakakis\\Desktop\\Reactivities\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\mkorakakis\\Desktop\\Reactivities\\Application\\Application.csproj"
             },
-            "/home/mike/Desktop/Reactivities/Infrastructure/Infrastructure.csproj": {
-              "projectPath": "/home/mike/Desktop/Reactivities/Infrastructure/Infrastructure.csproj"
+            "C:\\Users\\mkorakakis\\Desktop\\Reactivities\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\mkorakakis\\Desktop\\Reactivities\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
@@ -7157,7 +7157,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.201/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
