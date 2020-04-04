@@ -7,7 +7,7 @@ namespace Persistence.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Following",
+                name: "Followings",
                 columns: table => new
                 {
                     ObserverId = table.Column<string>(nullable: false),
@@ -15,15 +15,15 @@ namespace Persistence.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Following", x => new { x.ObserverId, x.TargetId });
+                    table.PrimaryKey("PK_Followings", x => new { x.ObserverId, x.TargetId });
                     table.ForeignKey(
-                        name: "FK_Following_AspNetUsers_ObserverId",
+                        name: "FK_Followings_AspNetUsers_ObserverId",
                         column: x => x.ObserverId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Following_AspNetUsers_TargetId",
+                        name: "FK_Followings_AspNetUsers_TargetId",
                         column: x => x.TargetId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
@@ -31,15 +31,15 @@ namespace Persistence.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Following_TargetId",
-                table: "Following",
+                name: "IX_Followings_TargetId",
+                table: "Followings",
                 column: "TargetId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Following");
+                name: "Followings");
         }
     }
 }

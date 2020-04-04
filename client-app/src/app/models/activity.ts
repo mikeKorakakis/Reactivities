@@ -1,3 +1,8 @@
+export interface IActivitiesEnvelope {
+	activities: IActivity[];
+	activityCount: number;
+}
+
 export interface IActivity {
 	id: string;
 	title: string;
@@ -49,5 +54,4 @@ export interface IComment {
 	username: string;
 	displayName: string;
 	image: string;
-
 }

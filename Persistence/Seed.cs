@@ -7,14 +7,14 @@ using Microsoft.AspNetCore.Identity;
 
 namespace Persistence
 {
-  public class Seed
-  {
-    public static async Task SeedData(DataContext context,
-        UserManager<AppUser> userManager)
+    public class Seed
     {
-      if (!userManager.Users.Any())
-      {
-        var users = new List<AppUser>
+        public static async Task SeedData(DataContext context,
+            UserManager<AppUser> userManager)
+        {
+            if (!userManager.Users.Any())
+            {
+                var users = new List<AppUser>
                 {
                     new AppUser
                     {
@@ -39,15 +39,15 @@ namespace Persistence
                     },
                 };
 
-        foreach (var user in users)
-        {
-          await userManager.CreateAsync(user, "Pa$m$w0rd");
-        }
-      }
+                foreach (var user in users)
+                {
+                    await userManager.CreateAsync(user, "Pa$$w0rd");
+                }
+            }
 
-      if (!context.Activities.Any())
-      {
-        var activities = new List<Activity>
+            if (!context.Activities.Any())
+            {
+                var activities = new List<Activity>
                 {
                     new Activity
                     {
@@ -279,9 +279,9 @@ namespace Persistence
                     }
                 };
 
-        await context.Activities.AddRangeAsync(activities);
-        await context.SaveChangesAsync();
-      }
+                await context.Activities.AddRangeAsync(activities);
+                await context.SaveChangesAsync();
+            }
+        }
     }
-  }
 }

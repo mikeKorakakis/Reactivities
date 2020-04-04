@@ -6589,19 +6589,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mkorakakis\\.nuget\\packages\\": {}
+    "/home/mike/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mkorakakis\\Desktop\\Reactivities\\Application\\Application.csproj",
+      "projectUniqueName": "/home/mike/Desktop/Reactivities/Application/Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\mkorakakis\\Desktop\\Reactivities\\Application\\Application.csproj",
-      "packagesPath": "C:\\Users\\mkorakakis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mkorakakis\\Desktop\\Reactivities\\Application\\obj\\",
+      "projectPath": "/home/mike/Desktop/Reactivities/Application/Application.csproj",
+      "packagesPath": "/home/mike/.nuget/packages/",
+      "outputPath": "/home/mike/Desktop/Reactivities/Application/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mkorakakis\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/mike/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
@@ -6612,11 +6612,11 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\mkorakakis\\Desktop\\Reactivities\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\mkorakakis\\Desktop\\Reactivities\\Domain\\Domain.csproj"
+            "/home/mike/Desktop/Reactivities/Domain/Domain.csproj": {
+              "projectPath": "/home/mike/Desktop/Reactivities/Domain/Domain.csproj"
             },
-            "C:\\Users\\mkorakakis\\Desktop\\Reactivities\\Persistence\\Persistence.csproj": {
-              "projectPath": "C:\\Users\\mkorakakis\\Desktop\\Reactivities\\Persistence\\Persistence.csproj"
+            "/home/mike/Desktop/Reactivities/Persistence/Persistence.csproj": {
+              "projectPath": "/home/mike/Desktop/Reactivities/Persistence/Persistence.csproj"
             }
           }
         }
@@ -6661,10 +6661,6 @@
           {
             "name": "Microsoft.NETCore.App.Ref",
             "version": "[3.0.0, 3.0.0]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[3.0.0, 3.0.0]"
           }
         ],
         "frameworkReferences": {
@@ -6672,7 +6668,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.201/RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -13,11 +13,11 @@ const ActivityDetailedChat = () => {
 		createHubConnection,
 		stopHubConnection,
 		addComment,
-		activity
+		activity,
 	} = rootStore.activityStore;
 
 	useEffect(() => {
-		createHubConnection(activity!.id);
+		createHubConnection();
 		return () => {
 			stopHubConnection();
 		};
@@ -38,7 +38,7 @@ const ActivityDetailedChat = () => {
 				<Comment.Group>
 					{activity &&
 						activity.comments &&
-						activity.comments.map(comment => (
+						activity.comments.map((comment) => (
 							<Comment key={comment.id}>
 								<Comment.Avatar
 									src={comment.image || "/assets/user.png"}
