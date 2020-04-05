@@ -11,10 +11,10 @@ namespace Persistence.Migrations
                 name: "UserActivities",
                 columns: table => new
                 {
-                    AppUserId = table.Column<string>(nullable: false),
-                    ActivityId = table.Column<Guid>(nullable: false),
-                    DateJoined = table.Column<DateTime>(nullable: false),
-                    IsHost = table.Column<bool>(nullable: false)
+                    AppUserId = table.Column<string>(nullable: false, maxLength: 256),
+                    ActivityId = table.Column<Guid>(nullable: false, maxLength: 68),
+                    DateJoined = table.Column<DateTime>(nullable: false, maxLength: 256),
+                    IsHost = table.Column<bool>(nullable: false, maxLength: 255)
                 },
                 constraints: table =>
                 {

@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import { IUser, IUserFormValues } from "../models/user";
 import { IProfile, IPhoto } from "../models/profile";
 
-axios.defaults.baseURL = "http://localhost:4999/api";
+axios.defaults.baseURL = process.env.REACT_APP_API_URL;
 
 axios.interceptors.request.use(
 	(config) => {
@@ -22,9 +22,18 @@ axios.interceptors.response.use(undefined, (error) => {
 	if (error.message === "Network Error" && !error.response) {
 		toast.error("Network error - make sure API is running!");
 	}
-	const { status, data, config } = error.response;
+	const { status, data, config, headers } = error.response;
 	if (status === 404) {
 		history.push("/notfound");
+	}
+	if (
+		status === 401 &&
+		headers["www-authenticate"] ===
+			'Bearer error="invalid_token", error_description="The token is expired"'
+	) {
+		window.localStorage.removeItem("jwt");
+		history.push("/");
+		toast.info("Your session has expired, please login again");
 	}
 	if (
 		status === 400 &&
@@ -47,13 +56,10 @@ const sleep = (ms: number) => (response: AxiosResponse) =>
 	);
 
 const requests = {
-	get: (url: string) => axios.get(url).then(sleep(1000)).then(responseBody),
-	post: (url: string, body: {}) =>
-		axios.post(url, body).then(sleep(1000)).then(responseBody),
-	put: (url: string, body: {}) =>
-		axios.put(url, body).then(sleep(1000)).then(responseBody),
-	del: (url: string) =>
-		axios.delete(url).then(sleep(1000)).then(responseBody),
+	get: (url: string) => axios.get(url).sfthen(responseBody),
+	post: (url: string, body: {}) => axios.post(url, body).sfthen(responseBody),
+	put: (url: string, body: {}) => axios.put(url, body).sfthen(responseBody),
+	del: (url: string) => axios.delete(url).sfthen(responseBody),
 	postForm: (url: string, file: Blob) => {
 		let formData = new FormData();
 		formData.append("File", file);
@@ -86,6 +92,8 @@ const User = {
 		requests.post(`/user/login`, user),
 	register: (user: IUserFormValues): Promise<IUser> =>
 		requests.post(`/user/register`, user),
+	fbLogin: (accessToken: string) =>
+		requests.post(`/user/facebook`, { accessToken }),
 };
 
 const Profiles = {

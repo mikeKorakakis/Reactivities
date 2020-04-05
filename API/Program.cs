@@ -10,38 +10,38 @@ using Persistence;
 
 namespace API
 {
-  public class Program
-  {
-    public static void Main(string[] args)
+    public class Program
     {
-      var host = CreateHostBuilder(args).Build();
-
-      using (var scope = host.Services.CreateScope())
-      {
-
-        var services = scope.ServiceProvider;
-        try
+        public static void Main(string[] args)
         {
-          var context = services.GetRequiredService<DataContext>();
-          var userManager = services.GetRequiredService<UserManager<AppUser>>();
-          context.Database.Migrate();
-          Seed.SeedData(context, userManager).Wait();
-        }
-        catch (Exception ex)
-        {
-          var logger = services.GetRequiredService<ILogger<Program>>();
-          logger.LogError(ex, "An error occured during migration");
-        }
-      }
+            var host = CreateHostBuilder(args).Build();
 
-      host.Run();
-    }
-
-    public static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
-            .ConfigureWebHostDefaults(webBuilder =>
+            using (var scope = host.Services.CreateScope())
             {
-              webBuilder.UseStartup<Startup>();
-            });
-  }
+
+                var services = scope.ServiceProvider;
+                try
+                {
+                    var context = services.GetRequiredService<DataContext>();
+                    var userManager = services.GetRequiredService<UserManager<AppUser>>();
+                    context.Database.Migrate();
+                    Seed.SeedData(context, userManager).Wait();
+                }
+                catch (Exception ex)
+                {
+                    var logger = services.GetRequiredService<ILogger<Program>>();
+                    logger.LogError(ex, "An error occured during migration");
+                }
+            }
+
+            host.Run();
+        }
+
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseKestrel(x => x.AddServerHeader = false).UseStartup<Startup>();
+                });
+    }
 }

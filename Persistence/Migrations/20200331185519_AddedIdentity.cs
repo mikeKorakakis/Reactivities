@@ -11,9 +11,9 @@ namespace Persistence.Migrations
                 name: "AspNetRoles",
                 columns: table => new
                 {
-                    Id = table.Column<string>(nullable: false),
+                    Id = table.Column<string>(nullable: false, maxLength: 256),
                     Name = table.Column<string>(maxLength: 256, nullable: true),
-                    NormalizedName = table.Column<string>(maxLength: 256, nullable: true),
+                    NormalizedName = table.Column<string>(nullable: true, maxLength: 256),
                     ConcurrencyStamp = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
@@ -25,22 +25,22 @@ namespace Persistence.Migrations
                 name: "AspNetUsers",
                 columns: table => new
                 {
-                    Id = table.Column<string>(nullable: false),
+                    Id = table.Column<string>(nullable: false, maxLength: 256),
                     UserName = table.Column<string>(maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(maxLength: 256, nullable: true),
                     Email = table.Column<string>(maxLength: 256, nullable: true),
                     NormalizedEmail = table.Column<string>(maxLength: 256, nullable: true),
-                    EmailConfirmed = table.Column<bool>(nullable: false),
-                    PasswordHash = table.Column<string>(nullable: true),
-                    SecurityStamp = table.Column<string>(nullable: true),
-                    ConcurrencyStamp = table.Column<string>(nullable: true),
-                    PhoneNumber = table.Column<string>(nullable: true),
-                    PhoneNumberConfirmed = table.Column<bool>(nullable: false),
-                    TwoFactorEnabled = table.Column<bool>(nullable: false),
-                    LockoutEnd = table.Column<DateTimeOffset>(nullable: true),
-                    LockoutEnabled = table.Column<bool>(nullable: false),
-                    AccessFailedCount = table.Column<int>(nullable: false),
-                    DisplayName = table.Column<string>(nullable: true)
+                    EmailConfirmed = table.Column<bool>(nullable: false, maxLength: 255),
+                    PasswordHash = table.Column<string>(nullable: true, maxLength: 256),
+                    SecurityStamp = table.Column<string>(nullable: true, maxLength: 256),
+                    ConcurrencyStamp = table.Column<string>(nullable: true, maxLength: 256),
+                    PhoneNumber = table.Column<string>(nullable: true, maxLength: 255),
+                    PhoneNumberConfirmed = table.Column<bool>(nullable: false, maxLength: 255),
+                    TwoFactorEnabled = table.Column<bool>(nullable: false, maxLength: 255),
+                    LockoutEnd = table.Column<DateTimeOffset>(nullable: true, maxLength: 256),
+                    LockoutEnabled = table.Column<bool>(nullable: false, maxLength: 255),
+                    AccessFailedCount = table.Column<int>(nullable: false, maxLength: 256),
+                    DisplayName = table.Column<string>(nullable: true, maxLength: 256)
                 },
                 constraints: table =>
                 {
@@ -51,11 +51,11 @@ namespace Persistence.Migrations
                 name: "AspNetRoleClaims",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
+                    Id = table.Column<int>(nullable: false, maxLength: 256)
                         .Annotation("Sqlite:Autoincrement", true),
-                    RoleId = table.Column<string>(nullable: false),
-                    ClaimType = table.Column<string>(nullable: true),
-                    ClaimValue = table.Column<string>(nullable: true)
+                    RoleId = table.Column<string>(nullable: false, maxLength: 256),
+                    ClaimType = table.Column<string>(nullable: true, maxLength: 256),
+                    ClaimValue = table.Column<string>(nullable: true, maxLength: 256)
                 },
                 constraints: table =>
                 {
@@ -72,11 +72,11 @@ namespace Persistence.Migrations
                 name: "AspNetUserClaims",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
+                    Id = table.Column<int>(nullable: false, maxLength: 256)
                         .Annotation("Sqlite:Autoincrement", true),
-                    UserId = table.Column<string>(nullable: false),
-                    ClaimType = table.Column<string>(nullable: true),
-                    ClaimValue = table.Column<string>(nullable: true)
+                    UserId = table.Column<string>(nullable: false, maxLength: 256),
+                    ClaimType = table.Column<string>(nullable: true, maxLength: 256),
+                    ClaimValue = table.Column<string>(nullable: true, maxLength: 256)
                 },
                 constraints: table =>
                 {
@@ -93,10 +93,10 @@ namespace Persistence.Migrations
                 name: "AspNetUserLogins",
                 columns: table => new
                 {
-                    LoginProvider = table.Column<string>(nullable: false),
-                    ProviderKey = table.Column<string>(nullable: false),
-                    ProviderDisplayName = table.Column<string>(nullable: true),
-                    UserId = table.Column<string>(nullable: false)
+                    LoginProvider = table.Column<string>(nullable: false, maxLength: 256),
+                    ProviderKey = table.Column<string>(nullable: false, maxLength: 256),
+                    ProviderDisplayName = table.Column<string>(nullable: true, maxLength: 256),
+                    UserId = table.Column<string>(nullable: false, maxLength: 256)
                 },
                 constraints: table =>
                 {
@@ -113,8 +113,8 @@ namespace Persistence.Migrations
                 name: "AspNetUserRoles",
                 columns: table => new
                 {
-                    UserId = table.Column<string>(nullable: false),
-                    RoleId = table.Column<string>(nullable: false)
+                    UserId = table.Column<string>(nullable: false, maxLength: 256),
+                    RoleId = table.Column<string>(nullable: false, maxLength: 256)
                 },
                 constraints: table =>
                 {
@@ -137,10 +137,10 @@ namespace Persistence.Migrations
                 name: "AspNetUserTokens",
                 columns: table => new
                 {
-                    UserId = table.Column<string>(nullable: false),
-                    LoginProvider = table.Column<string>(nullable: false),
-                    Name = table.Column<string>(nullable: false),
-                    Value = table.Column<string>(nullable: true)
+                    UserId = table.Column<string>(nullable: false, maxLength: 256),
+                    LoginProvider = table.Column<string>(nullable: false, maxLength: 256),
+                    Name = table.Column<string>(nullable: false, maxLength: 256),
+                    Value = table.Column<string>(nullable: true, maxLength: 256)
                 },
                 constraints: table =>
                 {
@@ -158,11 +158,11 @@ namespace Persistence.Migrations
                 table: "AspNetRoleClaims",
                 column: "RoleId");
 
-            migrationBuilder.CreateIndex(
-                name: "RoleNameIndex",
-                table: "AspNetRoles",
-                column: "NormalizedName",
-                unique: true);
+            // migrationBuilder.CreateIndex(
+            //     name: "RoleNameIndex",
+            //     table: "AspNetRoles",
+            //     column: "NormalizedName",
+            //     unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetUserClaims_UserId",
@@ -179,16 +179,17 @@ namespace Persistence.Migrations
                 table: "AspNetUserRoles",
                 column: "RoleId");
 
-            migrationBuilder.CreateIndex(
-                name: "EmailIndex",
-                table: "AspNetUsers",
-                column: "NormalizedEmail");
+            // migrationBuilder.CreateIndex(
+            //     name: "EmailIndex",
+            //     table: "AspNetUsers",
+            //     column: "NormalizedEmail"
+            //     );
 
-            migrationBuilder.CreateIndex(
-                name: "UserNameIndex",
-                table: "AspNetUsers",
-                column: "NormalizedUserName",
-                unique: true);
+            // migrationBuilder.CreateIndex(
+            //     name: "UserNameIndex",
+            //     table: "AspNetUsers",
+            //     column: "NormalizedUserName",
+            //     unique: true);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
